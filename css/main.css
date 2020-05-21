@@ -105,6 +105,11 @@ a {
     background: none;
 }
 
+.yellow {
+    color: #ffe600;
+}
+
+
 /*BUTTON*/
 .btn {
     width: 106px;
@@ -254,17 +259,21 @@ header .helpful-link a:hover {
 
 @media all and (max-width: 1200px) {
 
+    .letter {
+        font-size: 10px;
+    }
+
     body {
         font-size: 12px;
     }
 
     .inner {
-        max-width: 800px;
+        max-width: 720px;
     }
 
     .keyboard .key-group {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .key-description {
@@ -284,7 +293,6 @@ header .helpful-link a:hover {
 }
 
 
-
 @media all and (max-width: 720px) {
     body {
         font-size: 14px;
@@ -302,6 +310,10 @@ header .helpful-link a:hover {
     .key-description {
         font-size: 12px;
         margin-top: 5px;
+    }
+
+    .letter {
+        font-size: 18px;
     }
 
     .color-description-group .order {
