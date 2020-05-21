@@ -18,7 +18,7 @@ a {
 }
 
 .inner {
-    max-width: 980px;
+    max-width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
@@ -42,8 +42,8 @@ a {
 /*KEY*/
 
 .keyboard .key-group {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     /*border: 3px solid #eeeeee;*/
     border-radius: 10px;
     text-align: center;
@@ -79,8 +79,8 @@ a {
 }
 
 .key-description {
-    font-size: 8px;
-    margin-top: 3px;
+    font-size: 12px;
+    margin-top: 5px;
     box-sizing: border-box;
 }
 
@@ -217,7 +217,7 @@ header .helpful-link a:hover {
 
 /*COLOR DESCRIPTION*/
 .color-description-group {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 30px auto;
     align-items: center;
     display: flex;
@@ -230,7 +230,7 @@ header .helpful-link a:hover {
 
 .color-description-group .order {
     border-radius: 3px;
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px;
     box-sizing: border-box;
     margin-right: 10px;
@@ -239,7 +239,7 @@ header .helpful-link a:hover {
 
 /*KEYBORAD*/
 .keyboard {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 30px auto;
     align-items: center;
     justify-items: center;
@@ -252,8 +252,64 @@ header .helpful-link a:hover {
     display: flex;
 }
 
+@media all and (max-width: 1200px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .inner {
+        max-width: 800px;
+    }
+
+    .keyboard .key-group {
+        width: 60px;
+        height: 60px;
+    }
+
+    .key-description {
+        font-size: 8px;
+        margin-top: 1px;
+    }
+
+    .color-description-group .order {
+        font-size: 10px;
+    }
+
+    .git-group .group-content div {
+        width: 160px;
+    }
+
+
+}
+
+
 
 @media all and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+
+    .inner {
+        max-width: none;
+    }
+
+    .keyboard .key-group {
+        width: 100px;
+        height: 100px;
+    }
+
+    .key-description {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .color-description-group .order {
+        font-size: 14px;
+    }
+
+
+
     .git-groups {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
