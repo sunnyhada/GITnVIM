@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>GIT 단축키</title>
+    <meta name="author" content="sunny">
+    <meta name="description" content="git&vim 단축키 모음 사이트 입니다.">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,
+                    user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GITnVIM">
+    <meta property="og:title" content="git&vim 단축키 모음 사이트">
+    <meta property="og:description" content="git&vim 단축키 모음 사이트 입니다.">
+    <meta property="og:image" content="img/logo_1x.png">
+    <meta property="og:url" content="https://sunnyhada.github.io/GITnVim/Git.html">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="GITnVIM">
+    <meta property="twitter:title" content="git&vim 단축키 모음 사이트">
+    <meta property="twitter:description" content="git&vim 단축키 모음 사이트 입니다.">
+    <meta property="twitter:image" content="img/logo_1x.png">
+    <meta property="twitter:url" content="https://sunnyhada.github.io/GITnVim/Git.html">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_1x.png">
+    <link rel="icon" href="img/logo_1x.png">
+    <link rel="apple-touch-icon" href="img/logo_1x.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<header class="section clearfix">
+    <section class="section inner">
+        <div class="menu-group float--left">
+            <ul>
+                <li><a href="./Git.html" class="btn-active" title="Git 명령어">Git</a></li>
+                <li><a href="./Vim.html" class="btn" vim="Vim 단축키">Vim</a></li>
+            </ul>
+        </div>
+
+        <div class="helpful-link float--right">
+            <ul>
+                <li><a href="https://youtu.be/hFJZwOfme6w" target="_blank" class="git-from-hell" title="지옥에서 온 깃">[생활코딩]지옥에서 온 깃</a></li>
+                <li>/</li>
+                <li><a href="http://www.github.com" target="_blank" class="GitHub" title="깃허브">GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+</header>
+
+<section class="git-groups inner">
+
+    <ul class="git-group">
+        <li class="group-title">[ 시작 관련 명령어 ]</li>
+        <li class="group-content">
+            <div class="content-title">git init</div>
+            <div class="content-description">git 생성</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git clone [git_path]</div>
+            <div class="content-description">git 저장소 복사하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git add [file_path]</div>
+            <div class="content-description">수정한 코드 선택하기<br/>(ex.&nbsp;git&nbsp;add&nbsp;--all)</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git commit -m “[commit_description]”</div>
+            <div class="content-description">선택한 코드 설명 작성</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git push [romote_name] [branch_name]</div>
+            <div class="content-description">add하고 commit한 코드 git&nbsp;server에 보내기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git pull</div>
+            <div class="content-description">git서버에서 최신 코드 받아와 merge 하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git fetch</div>
+            <div class="content-description">git서버에서 최신 코드 받아오기</div>
+        </li>
+    </ul>
+
+    <ul class="git-group">
+        <li class="group-title">[ 브랜치 ]</li>
+        <li class="group-content">
+            <div class="content-title">git branch [branch_name]</div>
+            <div class="content-description">브랜치 생성하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git checkout [branch_name]</div>
+            <div class="content-description">브랜치 선택하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git checkout -t remote_path/branch_name</div>
+            <div class="content-description">원격 브랜치 선택하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git branch -r</div>
+            <div class="content-description">원격 브랜치 목록보기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git branch -a</div>
+            <div class="content-description">로컬 브랜치 목록보기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git branch -m [branch_name] [change_branch_name]</div>
+            <div class="content-description">브랜치 이름 바꾸기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git branch -d [branch_name]</div>
+            <div class="content-description">브랜치 삭제하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git push remote_name — delete [branch_name]</div>
+            <div class="content-description">원격 브랜치 삭제하기</div>
+        </li>
+    </ul>
+
+    <ul class="git-group">
+        <li class="group-title">[ RESET ]</li>
+        <li class="group-content">
+            <div class="content-title">git reset — hard HEAD^</div>
+            <div class="content-description">commit한 이전 코드 취소하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git reset — soft HEAD^</div>
+            <div class="content-description">코드는 살리고 commit만 취소하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git reset — merge</div>
+            <div class="content-description">merge 취소하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git reset — hard HEAD && git pull</div>
+            <div class="content-description">git 코드 강제로 모두 받아오기</div>
+        </li>
+    </ul>
+
+    <ul class="git-group">
+        <li class="group-title">[기타]</li>
+        <li class="group-content">
+            <div class="content-title">git config — global user.name “user_name ”</div>
+            <div class="content-description">git 계정Name 변경하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git config — global user.email “user_email”</div>
+            <div class="content-description">git 계정Mail변경하기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git stash / git stash save “description”</div>
+            <div class="content-description">작업코드 임시저장하고 브랜치 바꾸기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git stash pop</div>
+            <div class="content-description">마지막으로 임시저장한 작업코드 가져오기</div>
+        </li>
+        <li class="group-content">
+            <div class="content-title">git branch — set-upstream-to=remote_path/branch_name</div>
+            <div class="content-description">git pull no tracking info 에러해결</div>
+        </li>
+    </ul>
+</section>
+
+
+</body>
+</html>

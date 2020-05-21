@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>GIT 단축키</title>
+    <meta name="author" content="sunny">
+    <meta name="description" content="git&vim 단축키 모음 사이트 입니다.">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,
+                    user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GITnVIM">
+    <meta property="og:title" content="git&vim 단축키 모음 사이트">
+    <meta property="og:description" content="git&vim 단축키 모음 사이트 입니다.">
+    <meta property="og:image" content="img/logo_1x.png">
+    <meta property="og:url" content="https://sunnyhada.github.io/GITnVim/Vim.html">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="GITnVIM">
+    <meta property="twitter:title" content="git&vim 단축키 모음 사이트">
+    <meta property="twitter:description" content="git&vim 단축키 모음 사이트 입니다.">
+    <meta property="twitter:image" content="img/logo_1x.png">
+    <meta property="twitter:url" content="https://sunnyhada.github.io/GITnVim/Vim.html">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_1x.png">
+    <link rel="icon" href="img/logo_1x.png">
+    <link rel="apple-touch-icon" href="img/logo_1x.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+<header class="section clearfix">
+    <section class="section inner">
+        <div class="menu-group float--left">
+            <ul>
+                <li><a href="./Git.html" class="btn" title="Git 명령어">Git</a></li>
+                <li><a href="./Vim.html" class="btn-active" vim="Vim 단축키">Vim</a></li>
+            </ul>
+        </div>
+
+        <div class="helpful-link float--right">
+            <ul>
+                <li><a href="https://vim-adventures.com/" target="_blank" class="vim-adventure" title="빔어드벤쳐">빔 어드벤쳐</a></li>
+<!--                <li>/</li>-->
+<!--                <li><a href="#" class="GitHub" title="깃허브">GitHub</a></li>-->
+            </ul>
+        </div>
+    </section>
+</header>
+
+<div class="color-description-group">
+    <ul>
+        <li class="order order-mode">바로 동작하는 명령, 빨간글씨는&nbsp;입력&nbsp;모드로&nbsp;변경됨.</li>
+        <li class="order active">커서이동, 연산자 동작범위 지정</li>
+        <li class="order operation">오퍼레이션 펜딩모드, 커서&nbsp;위치부터&nbsp;목적지까지&nbsp;명령실행</li>
+        <li class="order inneed">추가적인 키 입력 필요</li>
+    </ul>
+</div>
+
+
+<section class="keyboard">
+
+    <ul>
+        <li>
+            <div class="key-group order-mode">
+                <div class="key-top order-mode">
+                    <p class="key-description">&nbsp;</p>
+                    <p class="letter">ESC</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">명령모드</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+        </li>
+
+        <li>
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">~</p>
+                    <p class="key-description">대소문자 전환</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">`.</p>
+                    <p class="key-description">표식으로 이동</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top operation">
+                    <p class="letter">!</p>
+                    <p class="key-description">외부 명령</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">1</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">@.</p>
+                    <p class="key-description">매크로 실행</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">2</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">#</p>
+                    <p class="key-description">이전 검색</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">3</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">$</p>
+                    <p class="key-description">행끝으로 이동</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">4</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">%</p>
+                    <p class="key-description">짝 괄호 찾기</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">5</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">^</p>
+                    <p class="key-description">행의 첫글자</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">6</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">&</p>
+                    <p class="key-description">:s 반복</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">7</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">*</p>
+                    <p class="key-description">다음 검색</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">8</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">(</p>
+                    <p class="key-description">문장시작</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">9</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">)</p>
+                    <p class="key-description">행 앞으로</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">0</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">_</p>
+                    <p class="key-description">아래 행</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">-</p>
+                    <p class="key-description">이전 행</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">+</p>
+                    <p class="key-description">다음 행</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">=</p>
+                    <p class="key-description">자동 들여쓰기</p>
+                </div>
+            </div>
+        </li>
+
+        <!--        2번째 줄-->
+        <li>
+
+            <div class="key-group blank">
+                <div class="key-top ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+                <div class="key-bottom ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">Q</p>
+                    <p class="key-description">실행모드</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">q.</p>
+                    <p class="key-description">매크로 기록</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">W</p>
+                    <p class="key-description">다음단어(의미)</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">w</p>
+                    <p class="key-description">다음단어</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">E</p>
+                    <p class="key-description">단어끝으로(의미)</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">e</p>
+                    <p class="key-description">단어끝으로</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">R</p>
+                    <p class="key-description">수정모드</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">r.</p>
+                    <p class="key-description">한 문자교체</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">T.</p>
+                    <p class="key-description">행에서후방검색</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">t.</p>
+                    <p class="key-description">행에서전방검색</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">Y</p>
+                    <p class="key-description">행 단위복사</p>
+                </div>
+                <div class="key-bottom operation">
+                    <p class="letter">y</p>
+                    <p class="key-description">복사</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">U</p>
+                    <p class="key-description">행단위 실행취소</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">u</p>
+                    <p class="key-description">실행취소</p>
+                </div>
+            </div>
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">I</p>
+                    <p class="key-description">커서 뒤 삽입</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">i</p>
+                    <p class="key-description">커서 앞 삽입</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">O</p>
+                    <p class="key-description">행위에삽입</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">o</p>
+                    <p class="key-description">행아래삽입</p>
+                </div>
+            </div>
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">P</p>
+                    <p class="key-description">커서 전붙여넣기</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">p</p>
+                    <p class="key-description">커서 후붙여넣기</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">{</p>
+                    <p class="key-description">문단 시작</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">[</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">}</p>
+                    <p class="key-description">문단 끝</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">]</p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+        </li>
+
+        <!--        3번째줄-->
+        <li>
+
+            <div class="key-group blank">
+                <div class="key-top ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+                <div class="key-bottom ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">A</p>
+                    <p class="key-description">행끝에삽입</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">a</p>
+                    <p class="key-description">커서뒤에삽입</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">S</p>
+                    <p class="key-description">행삭제후입력모드</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">s</p>
+                    <p class="key-description">단어삭제후입력모드</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">D</p>
+                    <p class="key-description">행삭제</p>
+                </div>
+                <div class="key-bottom operation">
+                    <p class="letter">d</p>
+                    <p class="key-description">삭제</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">F.</p>
+                    <p class="key-description">행에서후방검색</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">f.</p>
+                    <p class="key-description">행에서전방검색</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">G</p>
+                    <p class="key-description">파일끝으로</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">g.</p>
+                    <p class="key-description">확장명령</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">H</p>
+                    <p class="key-description">화면 상단</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">h</p>
+                    <p class="key-description">←</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">J</p>
+                    <p class="key-description">아래행합치기</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">j</p>
+                    <p class="key-description">↓</p>
+                </div>
+            </div>
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">K</p>
+                    <p class="key-description">도움말</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">k</p>
+                    <p class="key-description">↑</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">L</p>
+                    <p class="key-description">화면하단</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">l</p>
+                    <p class="key-description">→</p>
+                </div>
+            </div>
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">:</p>
+                    <p class="key-description">명령행모드</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">;</p>
+                    <p class="key-description">t/T/t/F반복</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top inneed">
+                    <p class="letter">".</p>
+                    <p class="key-description">레지스터지정</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">'.</p>
+                    <p class="key-description">표식으로이동</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">|</p>
+                    <p class="key-description">열 이동</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">\</p>
+                    <p class="key-description">사용하지않음</p>
+                </div>
+            </div>
+
+        </li>
+
+        <!--        4번째 줄-->
+        <li>
+
+            <div class="key-group blank">
+                <div class="key-top ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+                <div class="key-bottom ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top inneed">
+                    <p class="letter">Z.</p>
+                    <p class="key-description">종료</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">z.</p>
+                    <p class="key-description">확장명령</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">X</p>
+                    <p class="key-description">백스페이스</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">x</p>
+                    <p class="key-description">글자삭제</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">C</p>
+                    <p class="key-description">행끝까지바꾸기</p>
+                </div>
+                <div class="key-bottom inneed">
+                    <p class="letter">c</p>
+                    <p class="key-description">바꾸기</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top order-mode">
+                    <p class="letter">V</p>
+                    <p class="key-description">비주얼라인모드</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">v</p>
+                    <p class="key-description">비주얼모드</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">B</p>
+                    <p class="key-description">이전단어(의미상)</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">b</p>
+                    <p class="key-description">이전단어</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">N</p>
+                    <p class="key-description">이전(찾기)</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">n</p>
+                    <p class="key-description">다음(찾기)</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">M</p>
+                    <p class="key-description">화면가운데</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">m</p>
+                    <p class="key-description">표식설정</p>
+                </div>
+            </div>
+            <div class="key-group">
+                <div class="key-top operation">
+                    <p class="letter"><</p>
+                    <p class="key-description">내어쓰기</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">,</p>
+                    <p class="key-description">t/T/t/F반대방향검색</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top operation">
+                    <p class="letter">></p>
+                    <p class="key-description">들여쓰기</p>
+                </div>
+                <div class="key-bottom active">
+                    <p class="letter">.</p>
+                    <p class="key-description">명령반복</p>
+                </div>
+            </div>
+
+            <div class="key-group">
+                <div class="key-top active">
+                    <p class="letter">?.</p>
+                    <p class="key-description">찾기(위로)</p>
+                </div>
+                <div class="key-bottom order-mode">
+                    <p class="letter">/.</p>
+                    <p class="key-description">찾기(아래로)</p>
+                </div>
+            </div>
+
+            <div class="key-group blank">
+                <div class="key-top ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+                <div class="key-bottom ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+            <div class="key-group blank">
+                <div class="key-top ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+                <div class="key-bottom ">
+                    <p class="letter"></p>
+                    <p class="key-description"></p>
+                </div>
+            </div>
+
+        </li>
+    </ul>
+</section>
+
+</body>
+</html>
